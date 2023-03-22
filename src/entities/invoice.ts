@@ -21,6 +21,10 @@ export class Invoice {
         return  this.props.recipient; 
     }
 
+    get customer () {
+        return  this.props.customer; 
+    }
+
     get status () {
         return  this.props.status; 
     }

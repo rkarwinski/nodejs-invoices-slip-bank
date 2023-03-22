@@ -1,11 +1,5 @@
 import { ICustomer } from "./ICustomer";
-
-interface IRecipient {
-    document: string,
-    wallet: string,
-    agency: string,
-    account: string,
-}
+import { IRecipient } from "./IRecipient";
 
 export interface IInvoice {
     id?: string,
