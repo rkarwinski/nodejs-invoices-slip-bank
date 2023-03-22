@@ -36,8 +36,6 @@ test('create invoice', async () => {
         fine: 2,
     });
 
-    console.log(result);
-    
     expect(result.total).toEqual(total);
     expect(result.id).not.toBeUndefined();
 });
