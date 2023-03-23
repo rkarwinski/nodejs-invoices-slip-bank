@@ -1,17 +1,7 @@
-import { IInvoice } from "./interfaces/IInvoice";
-
-export interface SlipbankProps {
-    invoice: IInvoice,
-    seunum: string,
-    barcode: string, 
-    digitableLine: string, 
-    externalId: string, 
-    bank: string, 
-    status: number,
-}
+import { ISlipbank } from "./interfaces/ISlipBank";
 
 export class Slipbank {
-    private props: SlipbankProps; 
+    private props: ISlipbank; 
 
     get invoice () {
         return  this.props.invoice; 
@@ -28,8 +18,16 @@ export class Slipbank {
     get digitableLine () {
         return  this.props.digitableLine; 
     }
+
+    get externalId () {
+        return  this.props.externalId; 
+    }
+
+    get bank () {
+        return  this.props.bank; 
+    }
     
-    constructor(props: SlipbankProps) {
+    constructor(props: ISlipbank) {
         this.props = props; 
     }
 }

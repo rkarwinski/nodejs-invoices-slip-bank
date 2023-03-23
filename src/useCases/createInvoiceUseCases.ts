@@ -3,6 +3,7 @@ import { Invoice } from "../entities/invoice";
 import { ICustomerRepository } from "../repositories/ICustomerRepository";
 import { IInvoiceRepository } from "../repositories/IInvoiceRepository";
 import { ICreateInvoiceDto } from "./dtos/createInvoiceDto";
+import { DateHelper } from "./utils/dateHelper";
 
 export class CreateInvoiceUseCase {
     constructor(
@@ -21,6 +22,6 @@ export class CreateInvoiceUseCase {
         const invoice = new Invoice(data);
         const idInvoice = await this.invoiceRepository.save(invoice);
 
-        return this.invoiceRepository.findByid(idInvoice);
+        return this.invoiceRepository.findById(idInvoice);
     }
 }
