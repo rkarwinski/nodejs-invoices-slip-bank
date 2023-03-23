@@ -36,7 +36,7 @@ test('create customer', () => {
         barcode: '5a55555555555555555555555', 
         digitableLine: '555555555555555555', 
         externalId: '44444', 
-        bank: '237', 
+        bank: 237, 
         status: 2,
     });
 

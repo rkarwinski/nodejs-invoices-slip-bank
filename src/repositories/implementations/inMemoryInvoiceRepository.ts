@@ -4,7 +4,7 @@ import { IInvoiceRepository } from "../IInvoiceRepository";
 export class InMemoryInvoiceRepository implements IInvoiceRepository {
     private invoices: Invoice[] = [];
 
-    async findByid(id: string): Promise<Invoice> {
+    async findById(id: string): Promise<Invoice> {
         const invoice = this.invoices.find(invoice => invoice.id == id);
         return invoice;
     }
