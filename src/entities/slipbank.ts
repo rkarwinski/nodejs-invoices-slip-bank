@@ -1,3 +1,4 @@
+import { uuid } from "uuidv4";
 import { ISlipbank } from "./interfaces/ISlipBank";
 
 export class Slipbank {
@@ -28,6 +29,12 @@ export class Slipbank {
     }
     
     constructor(props: ISlipbank) {
+        const { id } = props;
+
+        if(!id){
+            props.id = uuid(); 
+        }
+
         this.props = props; 
     }
 }
