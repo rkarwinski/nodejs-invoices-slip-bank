@@ -33,6 +33,7 @@ test('create customer', () => {
             fine: 3,
         },
         seunum: '555555555',
+        nossonum: '0000555555555',
         barcode: '5a55555555555555555555555', 
         digitableLine: '555555555555555555', 
         externalId: '44444', 
