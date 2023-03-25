@@ -15,6 +15,11 @@ export class Customer {
         return  this.props.document; 
     }
 
+    get person () {
+        return  this.props.person; 
+    }
+
+
     constructor(props: ICustomer) {
         this.props = props; 
     }

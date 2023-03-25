@@ -8,6 +8,10 @@ export class Slipbank {
         return  this.props.invoice; 
     }
 
+    get id () {
+        return  this.props.id; 
+    }
+
     get seunum () {
         return  this.props.seunum; 
     }
@@ -26,6 +30,14 @@ export class Slipbank {
 
     get bank () {
         return  this.props.bank; 
+    }
+
+    get nossonum () {
+        return  this.props.nossonum; 
+    }
+
+    get status () {
+        return  this.props.status; 
     }
     
     constructor(props: ISlipbank) {

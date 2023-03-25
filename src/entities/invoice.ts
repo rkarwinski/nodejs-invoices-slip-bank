@@ -28,6 +28,14 @@ export class Invoice {
     get status () {
         return  this.props.status; 
     }
+
+    get fine () {
+        return  this.props.fine; 
+    }
+
+    get interest () {
+        return  this.props.interest; 
+    }
     
     constructor(props: IInvoice) {
         const { dueDate, interest, fine, total, status, id } = props;
