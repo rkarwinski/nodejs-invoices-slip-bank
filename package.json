@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/pg": "^8.6.6",
     "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "node-postgres": "^0.6.2",
+    "pg": "^8.10.0",
     "tsc": "^2.0.4",
     "uuidv4": "^6.2.13"
   },

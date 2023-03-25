@@ -14,7 +14,7 @@ export class CreateInvoiceUseCase {
     async execute(data: ICreateInvoiceDto): Promise<Invoice>{
         const customerAlreadyExists = await this.customerRepository.findByDocument(data.customer.document);
 
-        if (!customerAlreadyExists) {
+        if (!customerAlreadyExists || customerAlreadyExists.document == undefined) {
             const user = new Customer(data.customer);
             await this.customerRepository.save(user);    
         }
