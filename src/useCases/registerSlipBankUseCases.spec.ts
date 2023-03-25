@@ -122,7 +122,7 @@ test('cannot register slipbank with id bank incorrect', async () => {
     await expect(() => regiserSlipBank.execute(idBanco, payload)).rejects.toThrowError('Invalid bank ID');
 });
 
-test('register slipbank in bradesco API', async () => {
+test.skip('register slipbank in bradesco API', async () => {
     const idBanco = 237;
     const dueDate = new Date(); 
     dueDate.setDate(dueDate.getDate() + 10); 
@@ -164,7 +164,7 @@ test('register slipbank in bradesco API', async () => {
     expect(result.digitableLine).toString();
 });
 
-test('register slipbank in starkbank API', async () => {
+test.skip('register slipbank in starkbank API', async () => {
     const idBanco = 462;
     const dueDate = new Date(); 
     dueDate.setDate(dueDate.getDate() + 10); 

@@ -1,13 +1,13 @@
 import { IInvoice } from "../../entities/interfaces/IInvoice";
 import { ISlipbank } from "../../entities/interfaces/ISlipBank";
-import HttpClient from "../IHttpClient";
+import IHttpClient from "../IHttpClient";
 import IRegisterSlipBankGateway from "../IRegisterSlipBankGateway";
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 export class RegisterSlipBankGateway implements IRegisterSlipBankGateway {
-    constructor (readonly httpClient: HttpClient) {
+    constructor (readonly httpClient: IHttpClient) {
 
 	}
 
