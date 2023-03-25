@@ -35,6 +35,10 @@ export class Slipbank {
     get nossonum () {
         return  this.props.nossonum; 
     }
+
+    get status () {
+        return  this.props.status; 
+    }
     
     constructor(props: ISlipbank) {
         const { id } = props;

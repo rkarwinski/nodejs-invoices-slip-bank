@@ -79,9 +79,8 @@ export class PgSlipBankRepository implements ISlipBankRepository {
                 slipbank.barcode,
                 slipbank.digitableLine,
                 slipbank.invoice.dueDate,
-                slipbank.invoice.interest,
-                slipbank.invoice.fine,
-                slipbank.invoice.status
+                slipbank.invoice.total,
+                slipbank.status
             ]);
 
         } catch (error) {

@@ -1,4 +1,5 @@
 export class ICreateInvoiceDto {
+    id?: string;
     customer: {
         document: string;
         name: string;
